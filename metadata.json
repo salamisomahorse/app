@@ -1,0 +1,5 @@
+{
+  "name": "InsureNaija",
+  "description": "A web-based insurance brokerage platform for Nigeria. It allows clients to buy policies, file claims, and download certificates securely. It also serves as a CRM for brokers to manage quotes, issue policies, and handle claims.",
+  "requestFramePermissions": []
+}

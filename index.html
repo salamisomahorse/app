@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InsureNaija - Your Trusted Insurance Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#008751', // Nigeria Green
+                'light': '#00A86B',
+                'dark': '#006439',
+              },
+              secondary: '#F9FAFB', // Light Gray
+              accent: {
+                DEFAULT: '#D97706', // Amber
+                'light': '#FBBF24',
+                'dark': '#B45309',
+              }
+            },
+            animation: {
+              'float-slow': 'float 6s ease-in-out infinite',
+              'float-medium': 'float 4s ease-in-out infinite',
+              'float-fast': 'float 3s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react/": "https://esm.sh/react@18.2.0/",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+        "react-router-dom": "https://esm.sh/react-router-dom@6.23.0?external=react,react-dom",
+        "@google/genai": "https://esm.sh/@google/genai"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-secondary font-sans text-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
